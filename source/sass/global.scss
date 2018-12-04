@@ -1,0 +1,59 @@
+@font-face {
+    font-weight: normal;
+    font-family: "OpenSans";
+    font-style: normal;
+    src: url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-display: swap;
+  }
+  
+@font-face {
+    font-weight: bold;
+    font-family: "OpenSans";
+    font-style: normal;
+    src: url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-weight: light;
+    font-family: "OpenSans";
+    font-style: normal;
+    src: url("../fonts/OpenSans-Light.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-weight: 600;
+    font-family: "OpenSans";
+    font-style: normal;
+    src: url("../fonts/OpenSans-Semibold.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-weight: normal;
+    font-family: "LemonTuesday";
+    font-style: normal;
+    src: url("../fonts/Lemontuesday.woff") format("woff");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-weight: bold;
+    font-family: "Roboto";
+    font-style: normal;
+    src: url("../fonts/RobotoSlab-Bold.woff") format("woff");
+    font-display: swap;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: $bgr-color;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+
