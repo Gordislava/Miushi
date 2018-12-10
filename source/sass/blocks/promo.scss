@@ -1,0 +1,82 @@
+.promo {
+    width: auto;
+    min-height: 675px;
+}
+
+// .promo__slide {
+//      @include wrapper;
+//  }
+
+//  .slick {
+//      margin: 0 auto;
+//      width: 100%;
+//      max-width: 1170px;
+//  }
+
+.promo__slide {
+    width: 100%;
+    // max-width: 1920px;
+    background-image: url("../../img/bgr-slider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 675px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+.promo__content {
+    @include wrapper;
+    position: relative;
+}
+
+
+
+.promo__title {
+    margin: 0;
+    padding: 0;
+    font-family: "LemonTuesday", fantasy;
+    font-size: 90px;
+    line-height: 80px;
+    color:$accent-light;
+    max-width: 500px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.promo__descr {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    color: $bgr-color;
+}
+
+.promo__link {
+    display: inline-block;
+    width: 22%;
+    max-width: 245px;
+    padding: 15px 0 17px 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    color: $bgr-color;
+    background-color: $accent-opposite;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 150px;
+
+    &:hover {
+        background-color: darken($color: $accent-opposite, $amount: 10%);
+    }
+}
+
+.promo__button {
+    display: none;
+}

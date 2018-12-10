@@ -1,5 +1,5 @@
 @font-face {
-    font-weight: normal;
+    font-weight: 400;
     font-family: "OpenSans";
     font-style: normal;
     src: url("../fonts/OpenSans-Regular.woff") format("woff");
@@ -7,7 +7,7 @@
   }
   
 @font-face {
-    font-weight: bold;
+    font-weight: 700;
     font-family: "OpenSans";
     font-style: normal;
     src: url("../fonts/OpenSans-Bold.woff") format("woff");
@@ -15,12 +15,13 @@
   }
 
 @font-face {
-    font-weight: light;
+    font-weight: 300;
     font-family: "OpenSans";
     font-style: normal;
     src: url("../fonts/OpenSans-Light.woff") format("woff");
     font-display: swap;
   }
+  
 
 @font-face {
     font-weight: 600;
@@ -50,6 +51,7 @@
     margin: 0;
     padding: 0;
     background-color: $bgr-color;
+    color: $text-dark;
   }
 
   a {

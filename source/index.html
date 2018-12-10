@@ -4,18 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <title>"Миюши: суши и роллы"</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <img src="" alt="Суши Миюши" class="logo">
-        <ul class="page-header__contacts contacts">
+        <img src="img/logo.png" alt="Суши Миюши" class="logo" width="190" height="69">
+        <ul class="contacts">
           <li class="contacts__item contacts__item--address"> г. Курск, ул. Ленина, д. 3</li>
-          <li class="contacts__item contacts__item--email">78003332222@yandex.ru</li>
+          <li class="contacts__item contacts__item--email">
+            <a class="page-header__link contacts__link" href="mailto: 78003332222@yandex.ru">
+              78003332222@yandex.ru
+            </a>
+          </li>
         </ul>
         <div class="page-header__phone">
-          <p class="page-header__phone-number">+7 (800) 333 2 222</p>
+          <p class="page-header__phone-number">
+            <a class="page-header__link" href="tel:+78003332222">
+              +7 (800) 333 2 222
+            </a>
+          </p>
           <p class="page-header__work-time">Работаем с 11.00 до 23.00</p>
         </div>
         <button class="button page-header__button">Обратный звонок</button>
@@ -24,19 +34,27 @@
         <nav class="main-nav">
           <div class="select-menu">Меню</div>
           <ul class="site-nav">
-            <li class="site-nav__list">Акции и скидки</li>
-            <li class="site-nav__list">Доставка и оплата</li>
-            <li class="site-nav__list">Новости</li>
-            <li class="site-nav__list">Контакты</li>
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Акции и скидки</a>
+            </li>
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Новости</a>
+            </li>
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Контакты</a>
+            </li>
           </ul>
           <ul class="user-nav">
             <li class="user-nav__list">
-              <a href="" class="useer-nav__link useer-nav__link--cabinet">
+              <a href="" class="user-nav__link user-nav__link--cabinet">
                 Кабинет
               </a>
             </li>
             <li class="user-nav__list">
-              <a href="" class="useer-nav__link useer-nav__link--cart">
+              <a href="" class="user-nav__link user-nav__link--cart">
                 Корзина
               </a>
             </li>
@@ -46,14 +64,33 @@
     </header>
     <main>
       <section class="promo">
-        <div class="promo__slider slider">
-          <h2 class="promo__title">Счастливые часы</h2>
-          <p class="promo__descr">с 11:00 до 16:00 в будние дни</p>
-          <a href="" class="promo__link">Подробнее</a>
-          <button class="promo__button promo__button--prev">Назад</button>
-          <button class="promo__button promo__button--prev">Вперед</button>
+        <div class="promo__slider-js">
+          <div class="promo__slide">
+              <div class="promo__content">
+                <h2 class="promo__title">Счастливые часы</h2>
+                <p class="promo__descr">с 11:00 до 16:00 в будние дни</p>
+                <a href="" class="promo__link">Подробнее</a>
+              </div>
+          </div>
+          <div class="promo__slide">
+              <div class="promo__content">
+                <h2 class="promo__title">Скидки для компаний</h2>
+                <p class="promo__descr">Заказывай больше и плати меньше</p>
+                <a href="" class="promo__link">Подробнее</a>
+              </div>
+          </div>
+          <div class="promo__slide">
+              <div class="promo__content">
+                <h2 class="promo__title">Сезонные сеты</h2>
+                <p class="promo__descr">Встречай праздники с нами!</p>
+                <a href="" class="promo__link">Подробнее</a>
+              </div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

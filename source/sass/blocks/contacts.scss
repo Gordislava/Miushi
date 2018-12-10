@@ -1,0 +1,14 @@
+.contacts {
+    @include basic-text--small;
+    @include list-norm;
+    font-weight: 400;
+    width: 41.5%;
+    max-width: 485px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__item:hover,
+.contacts__link:hover {
+    color: $accent-dark;
+}

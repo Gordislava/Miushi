@@ -1,0 +1,10 @@
+.select-menu {
+    @include nav-text;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.select-menu:hover {
+    color: $bgr-color;
+    background-color: $accent-light;
+}

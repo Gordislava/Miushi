@@ -1,0 +1,15 @@
+.user-nav {
+    @include list-norm;
+    display: flex;
+}
+
+.user-nav__link {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.user-nav__link:hover {
+    color: $accent-light;
+}

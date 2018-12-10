@@ -1,0 +1,19 @@
+.button {
+    width: 14.6%;
+    max-width: 171px;
+    font-size: 13px;
+    color: $accent-dark;
+    letter-spacing: 0.7px;
+    box-sizing: border-box;
+    padding: 7px 0 9px 0;
+    border: 1px solid $accent-dark;
+    background-color: $bgr-color;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "OpenSans", "Arial", sans-serif;
+
+    &:hover {
+        color: $bgr-color;
+        background-color: $accent-dark;
+    }
+}

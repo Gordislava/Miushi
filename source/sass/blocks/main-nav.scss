@@ -1,0 +1,13 @@
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97.5%;
+    max-width: 1140px;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.main-nav a {
+    @include nav-text;
+}
