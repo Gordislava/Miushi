@@ -1,21 +1,10 @@
 .promo {
     width: auto;
-    min-height: 675px;
 }
 
-// .promo__slide {
-//      @include wrapper;
-//  }
-
-//  .slick {
-//      margin: 0 auto;
-//      width: 100%;
-//      max-width: 1170px;
-//  }
 
 .promo__slide {
     width: 100%;
-    // max-width: 1920px;
     background-image: url("../../img/bgr-slider.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,10 +29,22 @@
     line-height: 80px;
     color:$accent-light;
     max-width: 500px;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 40px;
+    position: relative
 }
 
+.promo__title::after {
+    content: "";
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    background-image: url("../../img/sale.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50px;
+    right: -180px;
+}
 .promo__descr {
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 25px;

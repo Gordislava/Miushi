@@ -1,0 +1,124 @@
+.product {
+    border-radius: 5px;
+    box-shadow: 0px 4px 29px 0 rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    width: 22.5%;
+    max-width: 263px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: normal;
+    margin: 0 15px 30px 15px;
+    min-height: 537px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product:hover {
+    box-shadow: 0px 4px 29px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product__img {
+    border-radius: 5px 5px 0 0;
+    margin: 0 auto;
+}
+
+.product__text-group {
+    padding: 0 35px;
+    margin-top: auto;
+}
+
+.product__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.42;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0px 17px 0px;
+}
+
+.product__descr {
+    font-size: 12px;
+    line-height: 1.67;
+    font-weight: 300;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 26px;
+
+}
+
+.product__price-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 29px;
+
+}
+
+.product__price {
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.29;
+    font-weight: 700;
+    margin: 0;
+}
+
+.product__price sup {
+    font-size: 10px;
+}
+
+.product__sum-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.product__sum {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $bgr-color;
+    border: 1px solid #808080;
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.product__sum-group p {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.product__button {
+    width: 100%;
+    max-width: 193px;
+    background-color: $accent-opposite;
+    color: $bgr-color;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 2.03;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-bottom: 38px;
+    cursor: pointer;
+}
+
+.product__button:hover,
+.product__button:active {
+    background-color: darken($color: $accent-opposite, $amount: 10%);
+}
+
+.product__select {
+    width: 100%;
+    background-color: $select-color;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}

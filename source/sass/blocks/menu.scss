@@ -1,0 +1,49 @@
+.menu {
+    width: 100%;
+    
+}
+
+.menu__section {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0px 5px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.menu__title {
+    font-family: "LemonTuesday", fantasy;
+    font-size: 60px;
+    line-height: 0.47;
+    color: $text-title;
+    text-align: center;
+    position: relative;
+    max-width: 420px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 76px;
+}
+
+.menu__title::after {
+    content: "";
+    position: absolute;
+    width: 109px;
+    height: 40px;
+    background-image: url("../../img/decor-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    right: 0;
+}
+
+.menu__title::before {
+    content: "";
+    position: absolute;
+    width: 109px;
+    height: 40px;
+    background-image: url("../../img/decor-left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+}

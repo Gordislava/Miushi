@@ -7,5 +7,19 @@
          dots: true,
          arrows: true
      });
-   });
+
+    
+});
+
+$('.menu__slider-js').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    dots: true,
+    arrows: true
+});
+
+
+   
           
