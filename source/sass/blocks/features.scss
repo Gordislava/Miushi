@@ -1,0 +1,109 @@
+.features {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;  
+}
+
+.features__title {
+    font-family: "LemonTuesday", fantasy;
+    font-size: 60px;
+    line-height: 0.47;
+    color: $text-title;
+    text-align: center;
+    position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 76px;
+}
+
+.features__title::after {
+    content: "";
+    position: absolute;
+    width: 109px;
+    height: 40px;
+    background-image: url("../../img/decor-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    right: 0;
+}
+
+.features__title::before {
+    content: "";
+    position: absolute;
+    width: 109px;
+    height: 40px;
+    background-image: url("../../img/decor-left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+.features__list {
+    @include list-norm;
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.features__item {
+    width: 17.6%;
+    padding-top: 88px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 77px 62px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: $text-color;
+    line-height: 28.8px;
+}
+
+.features__item--handmade {
+    background-image: url("../../img/kitchen.svg");
+}
+
+.features__item--fresh {
+    background-image: url("../../img/dish.svg");
+}
+
+.features__item--price {
+    background-image: url("../../img/money.svg");
+}
+
+.features__item--quality {
+    background-image: url("../../img/like.svg");
+}
+
+.features__item--fish {
+    background-image: url("../../img/fish.svg");
+}
+
+.features__item--rice {
+    background-image: url("../../img/rice.svg");
+}
+
+.features__item--roll {
+    width: 17.3%;
+    background-image: url("../../img/octopus.svg");
+}
+
+.features__item--avokado {
+    background-image: url("../../img/knife.svg");
+}
+
+.features__item--italian {
+    background-image: url("../../img/pizza.svg");
+
+}
+
+.features__item--mayo {
+    background-image: url("../../img/leaf.svg");
+}

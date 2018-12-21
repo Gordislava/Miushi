@@ -1,0 +1,77 @@
+.about {
+     width: 100%;
+     max-width: 1170px;
+     margin: 0 auto;
+
+}
+
+.about__title {
+    font-family: "LemonTuesday", fantasy;
+    font-size: 60px;
+    line-height: 0.47;
+    color: $text-title;
+    text-align: center;
+    position: relative;
+    width: 49%;
+    max-width: 570px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 76px;
+}
+
+.about__title::after {
+    content: "";
+    position: absolute;
+    width: 109px;
+    height: 40px;
+    background-image: url("../../img/decor-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    right: 0;
+}
+
+.about__title::before {
+    content: "";
+    position: absolute;
+    width: 109px;
+    height: 40px;
+    background-image: url("../../img/decor-left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+.about__head {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: $text-title;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.about__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color;
+    font-family: "OpenSans", "Arial", sans-serif;
+    width: 69%;
+    max-width: 806px;
+    text-align: left;
+}
+
+.about__p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}

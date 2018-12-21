@@ -21,5 +21,18 @@ $('.menu__slider-js').slick({
 });
 
 
+$('body').on('click','.tabs__list a',function(){
+    $('.tabs__list a').removeClass('active');
+    $(this).addClass('active');
+    var href = $(this).attr('href');
+    $('.tab__pane').removeClass('active').removeClass('in');
+    $(href).addClass('active');
+    setTimeout(function(){
+      $(href).addClass('in');
+    }, 200);
+    return false;
+  });
+
+
    
           
