@@ -12,3 +12,9 @@
 .contacts__link:hover {
     color: $accent-dark;
 }
+
+@media (max-width: 820px) {
+    .contacts {
+        display: none;
+    }
+}

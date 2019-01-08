@@ -42,3 +42,41 @@
     width: 100%;
     border-top: 1px solid #f2f2f2;
 }
+
+.page-header__hamb {
+    display: none;
+}
+
+@media (max-width: 820px) {
+    .page-header__hamb {
+        display: inline-block;
+        width: 23px;
+        height: 25px;
+        background-color: $bgr-color;
+        border: none;
+        background-image: url("../../img/menu.svg");
+        background-repeat: no-repeat;
+        background-size: 23px 25px;
+        background-position: center;
+    
+    }
+
+    .page-header__hamb:hover {
+        opacity: 0.6;
+    }
+
+    .page-header__bottom {
+        border: none;
+    }
+
+    .page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .page-header__phone,
+    .page-header__button {
+        display: none;
+    }
+}

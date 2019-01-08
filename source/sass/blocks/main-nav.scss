@@ -11,3 +11,9 @@
 .main-nav a {
     @include nav-text;
 }
+
+@media (max-width: 820px) {
+    .main-nav {
+        justify-content: flex-end;
+    }
+}

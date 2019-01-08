@@ -13,3 +13,30 @@
 .user-nav__link:hover {
     color: $accent-light;
 }
+
+.user-nav__icon {
+    width: 14px;
+    height: 14px;
+    padding-right: 5px;
+    color: $accent-dark;
+}
+
+.user-nav__icon:hover {
+    opacity: 0.6;
+}
+
+.user-nav__link {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 820px) {
+    .user-nav__icon {
+        width: 23px;
+        height: 23px;
+    }
+
+    .user-nav__link span {
+        display: none;
+    }
+}

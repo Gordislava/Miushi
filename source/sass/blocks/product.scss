@@ -123,3 +123,11 @@
     border-radius: 3px;
     margin-bottom: 20px;
 }
+
+@media (max-width: $tablet) {
+    .product {
+        width: 50%;
+        max-width: 220px;
+    }
+}
+

@@ -8,3 +8,9 @@
     color: $bgr-color;
     background-color: $accent-light;
 }
+
+@media (max-width: 820px) {
+    .select-menu {
+        display: none;
+    }
+}
