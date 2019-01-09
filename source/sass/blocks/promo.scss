@@ -2,14 +2,12 @@
     width: auto;
 }
 
-
 .promo__slide {
     width: 100%;
     background-image: url("../../img/bgr-slider.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 675px;
     margin: 0 auto;
     outline: 0;
 }
@@ -17,9 +15,8 @@
 .promo__content {
     @include wrapper;
     position: relative;
+    min-height: 675px;
 }
-
-
 
 .promo__title {
     margin: 0;
@@ -34,7 +31,7 @@
     position: relative
 }
 
-.promo__title::after {
+.promo__title--sale::after {
     content: "";
     position: absolute;
     width: 141px;
@@ -80,4 +77,36 @@
 
 .promo__button {
     display: none;
+}
+
+@media (max-width: 769px) {
+    .promo__title {
+        font-size: 72px;
+    }
+
+    .promo__title--sale::after {
+        top: 90px;
+    }
+    
+    .promo__link {
+        margin-bottom: 60px;
+    }
+
+    .promo__content {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 375px) {
+    .promo__link {
+        display: none;
+    }
+
+    .promo__title {
+        font-size: 49px;
+    }
+    .promo__title--sale::after {
+        top: 160px;
+        right: 0;
+    }
 }

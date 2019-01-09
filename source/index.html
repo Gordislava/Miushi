@@ -83,7 +83,7 @@
         <div class="promo__slider-js" id="promo-js">
           <div class="promo__slide">
               <div class="promo__content">
-                <h2 class="promo__title">Счастливые часы</h2>
+                <h2 class="promo__title promo__title--sale">Счастливые часы</h2>
                 <p class="promo__descr">с 11:00 до 16:00 в будние дни</p>
                 <a href="" class="promo__link">Подробнее</a>
               </div>
@@ -346,7 +346,7 @@
                         <img class="product__img" src="img/pizza2.jpg" alt="Свежие роллы">
                         <div class="product__text-group">
                           <h3 class="product__title">Деревенская</h3>
-                          <p class="product__descr">33 см. | 1 260 г. | 1 300 Kkal</p>
+                          <p class="product__descr">33 см. | 990 г. | 1 300 Kkal</p>
                           <div class="product__price-group">
                             <p class="product__price">890 <sup>руб</sup></p>
                             <div class="product__sum-group">
@@ -687,7 +687,7 @@
             <p class="form-section__note">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</p>
         </div>
         </div>
-      </section> -->
+      </section>
       <section class="about">
         <h2 class="about__title">О компании</h2>
         <h3 class="about__head">Заказ и доставка роллов, пиццы и WOK(Вок)</h3>
@@ -705,110 +705,134 @@
     </main>
     <footer class="footer">
       <div class="footer__top">
-        <ul class="footer__menu-list">
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Гунканы</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Суши</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Инари</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Супы</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Салаты</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Горячие закуски</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Десерты</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Напитки</a></li>
-          <li class="foter__menu-item"><a class="footer__menu-link" href="#">Дополнительно</a></li>
+        <ul class="footer__all">
+          <li class="footer__menu-all footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title footer__list-title--menu">
+                <a data-toggle="footer__dropdown">Меню</a>
+              </h4>
+              <ul class="footer__menu-list footer__dropdown-menu">
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Гунканы</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Суши</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Инари</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Супы</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Салаты</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Горячие закуски</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Десерты</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Напитки</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Дополнительно</a></li>
+              </ul>
+          </li>
+            <li class="footer__list footer__list--first footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Сеты</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--first footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 500 руб.</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 1000 руб. (для двоих)</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 1500 руб (для двоих - троих)</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 2000 руб (большая кампания)</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">от 2000 руб (очень большая кампания)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--second footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title footer__list-title--none">
+                <a data-toggle="footer__dropdown">Популярные</a>
+                </h4>
+              <ul class="footer__assortment-list footer__assortment-list--second footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">С угрем</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Горячие</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Запеченные</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Суши</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--fourth footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Роллы</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--fourth footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Традиционные/Классические</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Простые</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Теплые</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Запеченные</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Вегетарианские</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--fifth footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Вок</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--fifth footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Яичная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Удон</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Гречневая</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Стеклянная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Рис</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--fifth footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Пицца</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--fifth footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Мясная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Рыбная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Сырная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Вегетарианская</a>
+                </li>
+              </ul>
+            </li>
         </ul>
-      <div class="footer__list footer__list--first">
-        <h4 class="footer__list-title">Сеты</h4>
-        <ul class="footer__assortment-list footer__assortment-list--first">
-          <li class="footer__assortment-item">
-            <a href="#" class="footer__assortment-link">До 500 руб.</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="#" class="footer__assortment-link">До 1000 руб. (для двоих)</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="#" class="footer__assortment-link">До 1500 руб (для двоих - троих)</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="#" class="footer__assortment-link">До 2000 руб (большая кампания)</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="#" class="footer__assortment-link">от 2000 руб (очень большая кампания)</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__list footer__list--second">
-        <ul class="footer__assortment-list footer__assortment-list--second">
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">С угрем</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Горячие</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Запеченные</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Суши</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__list footer__list--fourth">
-        <h4 class="footer__list-title">Роллы</h4>
-        <ul class="footer__assortment-list footer__assortment-list--fourth">
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Традиционные/Классические</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Простые</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Теплые</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Запеченные</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Вегетарианские</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__list footer__list--fifth">
-        <h4 class="footer__list-title">Вок</h4>
-        <ul class="footer__assortment-list footer__assortment-list--fifth">
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Яичная</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Удон</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Гречневая</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Стеклянная</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Рис</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__list footer__list--fifth">
-        <h4 class="footer__list-title">Пицца</h4>
-        <ul class="footer__assortment-list footer__assortment-list--fifth">
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Мясная</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Рыбная</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Сырная</a>
-          </li>
-          <li class="footer__assortment-item">
-            <a href="" class="footer__assortment-link">Вегетарианская</a>
-          </li>
-        </ul>
-      </div>
     </div>
     <div class="footer__bottom">
       <p class="footer__copyright">МИЮШИ © 2017</p>

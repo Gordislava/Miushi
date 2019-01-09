@@ -97,6 +97,7 @@
 
 .features__item--avokado {
     background-image: url("../../img/knife.svg");
+    background-size: 92px 107px;
 }
 
 .features__item--italian {
@@ -106,4 +107,26 @@
 
 .features__item--mayo {
     background-image: url("../../img/leaf.svg");
+}
+
+@media (max-width: 769px) {
+    .features__title {
+        font-size: 48px;
+    }
+
+    .features__item {
+        width: 24%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .features__list {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 375px) {
+    .features__title {
+        font-size: 44px;
+    }
 }

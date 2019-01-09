@@ -12,7 +12,7 @@
     color: $text-title;
     text-align: center;
     position: relative;
-    width: 49%;
+    width: 70%;
     max-width: 570px;
     margin: 0 auto;
     margin-top: 80px;
@@ -74,4 +74,30 @@
     margin: 0;
     padding: 0;
     padding-bottom: 20px;
+}
+
+@media (max-width: 769px) {
+    .about__title {
+        font-size: 48px;
+    }
+
+    .about__img {
+        height: 479px;
+        margin-right: 10px;
+    }
+    
+    .about__text {
+        width: 58%;
+    }
+
+    .about__p--last {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .about__title {
+        font-size: 44px;
+        width: 100%;
+    }
 }

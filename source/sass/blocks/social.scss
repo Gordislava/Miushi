@@ -42,3 +42,10 @@
     color: transparent;
     font-size: 5px;
 }
+
+@media (max-width: 769px) {
+    .social {
+        width: 14%;
+        padding-right: 20px;
+    }
+}

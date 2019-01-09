@@ -48,8 +48,18 @@
     left: 0;
 }
 
-@media (max-width: $tablet) {
+@media (max-width: 769px) {
     .menu__section {
         max-width: 750px;
+    }
+    
+    .menu__title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu__title {
+        font-size: 44px;
     }
 }

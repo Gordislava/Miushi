@@ -11,14 +11,15 @@
                breakpoint: 1071,
                  settings: {
                  arrows: false,
-                 autoplay: true
+                 autoplay: false
                }
              },
              {
-                breakpoint: 751,
+                breakpoint: 769,
                 settings: {
                   dots: true,
-                  arrows: false
+                  arrows: false,
+                  autoplay: false
                 }
               }
             ]
