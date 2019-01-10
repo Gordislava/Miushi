@@ -22,8 +22,17 @@
     </svg>
     <header class="page-header">
       <div class="page-header__top">
-          <button class="page-header__hamb" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <img src="img/logo.png" alt="Суши Миюши" class="logo" width="190" height="69">
+          <button class="page-header__hamb" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+ 
+            <picture>
+              <source media="(max-width: 425px)" srcset="img/logo-mobile.png" width="55" height="52">
+              <img src="img/logo.png" alt="Суши Миюши" class="logo">
+            </picture>
+
+        
         <ul class="contacts">
           <li class="contacts__item contacts__item--address"> г. Курск, ул. Ленина, д. 3</li>
           <li class="contacts__item contacts__item--email">
@@ -194,7 +203,7 @@
             <h2 class="menu__title">Роллы</h2>
             <div class="menu__slider-js" id="menu-js">
               <div class="menu__item product">
-                <img class="product__img" src="" alt="Свежие роллы" height="183">
+                <img class="product__img product__img--roll" src="img/roll1.jpg" alt="Свежие роллы" height="183">
                 <div class="product__text-group">
                   <h3 class="product__title">Кунсей батакон</h3>
                   <p class="product__descr">8 шт. | 250 г. | 350 Kkal</p>
@@ -210,7 +219,7 @@
                 </div>
               </div>
               <div class="menu__item product">
-                  <img class="product__img" src="" alt="Свежие роллы" height="183">
+                  <img class="product__img product__img--roll" src="img/roll2.jpg" alt="Свежие роллы" height="183">
                   <div class="product__text-group">
                     <h3 class="product__title">Унаги диру</h3>
                     <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
@@ -226,7 +235,7 @@
                   </div>
                 </div>
                 <div class="menu__item product">
-                    <img class="product__img" src="" alt="Свежие роллы" height="183">
+                    <img class="product__img product__img--roll" src="img/roll3.jpg" alt="Свежие роллы" height="183">
                     <div class="product__text-group">
                       <h3 class="product__title">Филадельфия</h3>
                       <p class="product__descr">8 шт. | 450 г. | 400 Kkal</p>
@@ -242,7 +251,7 @@
                     </div>
                   </div>
                   <div class="menu__item product">
-                      <img class="product__img" src="" alt="Свежие роллы" height="183">
+                      <img class="product__img product__img--roll" src="img/roll4.jpg" alt="Свежие роллы" height="183">
                       <div class="product__text-group">
                         <h3 class="product__title">Мексиканский</h3>
                         <p class="product__descr">8 шт. | 460 г. | 490 Kkal</p>
@@ -258,7 +267,7 @@
                       </div>
                     </div>
                     <div class="menu__item product">
-                      <img class="product__img" src="" alt="Свежие роллы" height="183">
+                      <img class="product__img product__img--roll" src="img/roll1.jpg" alt="Свежие роллы" height="183">
                       <div class="product__text-group">
                         <h3 class="product__title">Унаги диру</h3>
                         <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
@@ -427,26 +436,26 @@
                         </div>
                       </div>
                       <div class="menu__item product">
-                          <img class="product__img" src="img/wok4.jpg" height="183" alt="Вкусный Wok">
-                          <div class="product__text-group">
-                            <h3 class="product__title">С овощами</h3>
-                            <p class="product__descr">400 г. | 1350 Kkal</p>
-                              <div class="product__price-group">
-                                  <select class="product__select" name="extra" id="">
-                                      <option value="china">Китайский соус</option>
-                                      <option value="karry">Карри</option>
-                                      <option value="thai">Тайский соус</option>
-                                    </select>
-                                <p class="product__price">990 <sup>руб</sup></p>
-                                <div class="product__sum-group">
-                                  <button class="product__sum product__sum--plus">+</button>
-                                  <p>1</p>
-                                  <button class="product__sum product__sum--minus">-</button>
-                                </div>
-                              </div>
-                            <button class="product__button">В корзину</button>
+                        <img class="product__img" src="img/wok2.jpg" alt="Вкусный Wok">
+                        <div class="product__text-group">
+                          <h3 class="product__title">С индейкой</h3>
+                          <p class="product__descr">400 г. | 1350 Kkal</p>
+                          <select class="product__select" name="extra" id="">
+                            <option value="china">Китайский соус</option>
+                            <option value="karry">Карри</option>
+                            <option value="thai">Тайский соус</option>
+                          </select>
+                          <div class="product__price-group">
+                            <p class="product__price">890 <sup>руб</sup></p>
+                            <div class="product__sum-group">
+                              <button class="product__sum product__sum--plus">+</button>
+                              <p>1</p>
+                              <button class="product__sum product__sum--minus">-</button>
+                            </div>
                           </div>
+                          <button class="product__button">В корзину</button>
                         </div>
+                      </div>
                         <div class="menu__item product">
                           <img class="product__img" src="img/wok2.jpg" alt="Вкусный Wok">
                           <div class="product__text-group">
@@ -471,7 +480,7 @@
                 </div>
               </section>
       </section>
-      <!-- <section class="tabs-section">
+      <section class="tabs-section">
           <div class="tabs">
               <div class="tabs__nav">
                   <ul class="tabs__list">
@@ -483,7 +492,7 @@
                   <div class="tab__pane tab__pane--one faded in active" id="one""> 
                     <div class="menu__slider-js" id="menu-js">
                       <div class="menu__item product">
-                        <img class="product__img" src="img/roll1.jpg" alt="Свежие роллы" height="183">
+                        <img class="product__img product__img--roll" src="img/roll1.jpg" alt="Свежие роллы" height="183">
                         <div class="product__text-group">
                           <h3 class="product__title">Кунсей батакон</h3>
                           <p class="product__descr">8 шт. | 250 г. | 350 Kkal</p>
@@ -499,7 +508,7 @@
                         </div>
                       </div>
                       <div class="menu__item product">
-                          <img class="product__img" src="img/roll2.jpg" alt="Свежие роллы" height="183">
+                          <img class="product__img product__img--roll" src="img/roll2.jpg" alt="Свежие роллы" height="183">
                           <div class="product__text-group">
                             <h3 class="product__title">Унаги диру</h3>
                             <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
@@ -515,7 +524,7 @@
                           </div>
                         </div>
                         <div class="menu__item product">
-                            <img class="product__img" src="img/roll3.jpg" alt="Свежие роллы" height="183">
+                            <img class="product__img product__img--roll" src="img/roll3.jpg" alt="Свежие роллы" height="183">
                             <div class="product__text-group">
                               <h3 class="product__title">Филадельфия</h3>
                               <p class="product__descr">8 шт. | 450 г. | 400 Kkal</p>
@@ -531,7 +540,7 @@
                             </div>
                           </div>
                           <div class="menu__item product">
-                              <img class="product__img" src="img/roll4.jpg" alt="Свежие роллы" height="183">
+                              <img class="product__img product__img--roll" src="img/roll4.jpg" alt="Свежие роллы" height="183">
                               <div class="product__text-group">
                                 <h3 class="product__title">Мексиканский</h3>
                                 <p class="product__descr">8 шт. | 460 г. | 490 Kkal</p>
@@ -547,7 +556,7 @@
                               </div>
                             </div>
                             <div class="menu__item product">
-                              <img class="product__img" src="img/roll2.jpg" alt="Свежие роллы" height="183">
+                              <img class="product__img product__img--roll" src="img/roll2.jpg" alt="Свежие роллы" height="183">
                               <div class="product__text-group">
                                 <h3 class="product__title">Унаги диру</h3>
                                 <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
@@ -564,7 +573,7 @@
                             </div>
                     </div>
                   </div>
-                  <div class="tab__pane faded" id="two">
+                  <div class="tab__pane tab__pane--two faded" id="two">
                       <div class="menu__slider-js" id="menu-js">
                           <div class="menu__item product">
                             <img class="product__img" src="img/pizza1.jpg" alt="Свежие роллы">
@@ -650,7 +659,7 @@
                   </div>
               </div>
           </div>
-      </section> -->
+      </section>
       <section class="features">
         <h2 class="features__title">10 причин купить у нас</h2>
         <ul class="features__list">
@@ -672,17 +681,19 @@
             <p class="form-section__text">Есть вопросы?</p>
             <h2 class="form-section__title">Оставьте свои контакты</h2>
             <form action="https://echo.htmlacademy.ru" method="POST" class="form">
-              <fieldset class="form__field">
-                  <ul class="form__list">
-                    <li class="form__item">
-                        <input required id="name" class="form__input form__input--name" type="text" name="name" placeholder="Имя">
-                    </li>
-                    <li class="form__item">
-                        <input required id="phone" class="form__input form__input--phone" type="tel" name="phone" placeholder="Телефон">
-                    </li>
-                  </ul>
-              </fieldset>
-              <button class="form__button">Отправить</button>
+              <div class="form__wrapper">
+                <fieldset class="form__field">
+                    <ul class="form__list">
+                      <li class="form__item">
+                          <input required id="name" class="form__input form__input--name" type="text" name="name" placeholder="Имя">
+                      </li>
+                      <li class="form__item">
+                          <input required id="phone" class="form__input form__input--phone" type="tel" name="phone" placeholder="Телефон">
+                      </li>
+                    </ul>
+                </fieldset>
+                <button class="form__button">Отправить</button>
+              </div>
             </form>
             <p class="form-section__note">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</p>
         </div>

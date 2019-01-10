@@ -202,3 +202,9 @@
     opacity: .75;
     color: black;
 }
+
+@media (max-width: 425px) {
+    .slick-dots {
+       bottom: -30px;
+    }
+}

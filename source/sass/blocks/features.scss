@@ -125,8 +125,19 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .features__title {
         font-size: 44px;
+        width: 77%;
+        line-height: 1.2;
+    }
+
+    .features__title::before,
+    .features__title::after {
+        display: none;
+    }
+
+    .features__item {
+        width: 57%;
     }
 }

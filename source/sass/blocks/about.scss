@@ -95,9 +95,33 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .about__title {
         font-size: 44px;
         width: 100%;
     }
+
+    .about__title::before,
+    .about__title::after {
+        display: none;
+    }
+
+    .about__head {
+        text-align: center;
+    }
+    
+    .about__img {
+        display: none;
+    }
+
+    .about__text {
+        width: 100%;
+    }
+
+    .about__content {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+
+
 }

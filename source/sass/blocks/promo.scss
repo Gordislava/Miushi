@@ -82,10 +82,12 @@
 @media (max-width: 769px) {
     .promo__title {
         font-size: 72px;
+        width: 70%;
     }
 
     .promo__title--sale::after {
-        top: 90px;
+        top: 20%;
+        left: 75%;
     }
     
     .promo__link {
@@ -97,7 +99,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .promo__link {
         display: none;
     }
@@ -106,7 +108,10 @@
         font-size: 49px;
     }
     .promo__title--sale::after {
-        top: 160px;
-        right: 0;
+        top: 60%;
+        left: 45%;
+        width: 76px;
+        height: 76px;
+        background-image: url("../../img/sale-mobile.png");
     }
 }

@@ -226,3 +226,28 @@
       }
 
 }
+
+@media (max-width: 425px) {
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__social {
+        order: 1;
+    }
+
+    .footer__data {
+        order: 2;
+        width: 90%;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .footer__copyright {
+        order: 3;
+        width: 90%;
+        padding-left: 0;
+        text-align: center;
+    }
+}

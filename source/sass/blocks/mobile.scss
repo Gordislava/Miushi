@@ -136,3 +136,10 @@
         color: $accent-dark;
     }
 }
+
+@media (max-width: 425px) {
+    .mobile__container {
+        width: 100%;
+        max-width: 100%;
+    }
+}

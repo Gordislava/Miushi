@@ -2,8 +2,8 @@
     border-radius: 5px;
     box-shadow: 0px 4px 29px 0 rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
-    width: 22.5%;
-    max-width: 263px;
+    // width: 22.5%;
+    // max-width: 263px;
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: normal;
     margin: 0 15px 30px 15px;
@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     background-color: $bgr-color;
+    overflow: hidden;
 }
 
 .product:hover {
@@ -20,6 +21,11 @@
 .product__img {
     border-radius: 5px 5px 0 0;
     margin: 0 auto;
+    width: 100%;
+}
+
+.product__img--roll {
+    width: auto;
 }
 
 .product__text-group {
@@ -125,9 +131,10 @@
 }
 
 @media (max-width: $tablet) {
-    .product {
-        width: 28%;
-        max-width: 220px;
-    }
+    // .product {
+    //     width: 28%;
+    //     max-width: 220px;
+    // }
 }
+
 

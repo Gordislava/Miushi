@@ -63,3 +63,11 @@
         width: 100%;
     }
 }
+
+@media (max-width: 425px) {
+    .form-section__title {
+        font-size: 44px;
+        width: 100%;
+        line-height: 1.2;
+    }
+}

@@ -5,6 +5,13 @@
     align-items: baseline;
 }
 
+.form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
 .form__field {
     border: 0;
     width: 66.7%;
@@ -72,4 +79,35 @@
 .form__button:hover,
 .form__button:active {
     background-color: darken($color: $accent-opposite, $amount: 10%);
+}
+
+@media (max-width: 425px) {
+    .form__list {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .form__item {
+        width: 100%;
+        max-width: 290px;
+        margin-bottom: 40px;
+    }
+
+    .form__button {
+        display: block;
+        width: 100%;
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
+    .form__wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .form__field {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

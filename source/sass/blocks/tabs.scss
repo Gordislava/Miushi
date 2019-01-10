@@ -59,8 +59,12 @@
 }
 
 .tab__pane--one {
-    position: absolute;
+    position: relative;
     z-index: 5;
     max-width: 1170px;
     margin: 0 auto;
+}
+
+.tab__pane--two {
+    margin-top: -450px;
 }

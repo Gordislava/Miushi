@@ -39,7 +39,7 @@ $('.menu__slider-js').slick({
         {
           breakpoint: 1071,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             arrows: false,
             infinite: true
           }
@@ -47,22 +47,33 @@ $('.menu__slider-js').slick({
         {
             breakpoint: 751,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 3,
               dots: false,
               arrows: false,
               infinite: true
             }
           },
           {
-            breakpoint: 425,
+            breakpoint: 650,
+            settings: {
+              slidesToShow: 2,
+              dots: false,
+              arrows: false,
+              infinite: true
+            }
+          },
+          {
+            breakpoint: 426,
             settings: {
               slidesToShow: 1,
               dots: false,
               arrows: false,
               infinite: true,
-              swipe: true
+              swipe: true,
+              centerMode: true
             }
           }
+          
     ]
 
 });

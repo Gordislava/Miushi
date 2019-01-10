@@ -49,3 +49,10 @@
         padding-right: 20px;
     }
 }
+
+@media (max-width: 425px) {
+    .social {
+        width: 27%;
+        padding-right: 0;
+    }
+}
